@@ -45,6 +45,9 @@ body {
     max-width: 1194px;
     margin: 0 auto;
 }
+.bonus {
+    margin-bottom: 20%;
+}
 .title {
     font-size: 46px;
     line-height: 56px;
@@ -219,13 +222,15 @@ body {
             &__text {
                 margin-bottom: auto;
                 padding: 43px 40px;
+                display: flex;
+                flex-direction: column;
                 &--header {
-                    margin-bottom: 16px;
                     text-align: center;
                     font-size: 24px;
                     line-height: 29px;
                 }
                 &--center {
+                    margin-top: 30px;
                     text-align: center;
                 }
             }
