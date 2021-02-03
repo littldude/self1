@@ -435,7 +435,7 @@ body {
 .buy {
     padding-bottom: 95px;
     &__form {
-        margin: 0 auto;
+        margin:40px auto 0 auto;
     }
     &__input {
         margin: 0 auto;
@@ -445,7 +445,7 @@ body {
         padding: 20px;
         color: $dark;
         border: 1px $pink solid;
-        border-radius: 10px;
+        border-radius: 25px;
         font-size: 18px;
     }
 }
@@ -569,6 +569,9 @@ body {
     .button {
         margin: 0 auto;
     }
+    .bonus {
+        margin-bottom: 0;
+    }
     .program {
         padding: 70px 0;
         &__title {
@@ -635,6 +638,9 @@ body {
             align-items: center;
             flex-direction: column;
         }
+        &__img {
+            margin-top: 30px;
+        }
     }
     .autor {
         &__title {
@@ -651,6 +657,30 @@ body {
         }
         &__inner {
             flex-direction: column;
+        }
+        &__img {
+            margin-bottom: 30px;
+        }
+    }
+    .about {
+        &__inner{
+            .item {
+                &__text {
+                    &--yellow {
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+    .review {
+        .item {
+            &__textblock {
+                width: auto;
+                &::after {
+                    display: none;
+                }
+            }
         }
     }
 }
@@ -709,6 +739,9 @@ body {
             }
         }
     }
+    .footer {
+        padding: 40px 0;
+    }
 }
 @media (max-width: 568px) {
     .subtitle {
@@ -737,9 +770,9 @@ body {
     .program {
         padding: 70px 0;
         &__inner {
-            padding: 0 3%;
+            padding: 5% 3%;
             &--item {
-                width: 80%;
+                width: 65%;
             }
             .item {
                 &__text {
@@ -754,6 +787,11 @@ body {
                     }
                 }
             }
+        }
+    }
+    .button {
+        &__buy {
+            width: 95%;
         }
     }
     .about {
@@ -870,13 +908,20 @@ body {
     .program {
         &__inner {
             &--item {
-                width: 90%;
+                width: 75%;
             }
             .item {
                 &__text {
                     &--header {
                         font-size: 18px;
                     }
+                    &--center {
+                        width: auto;
+                    }
+                }
+                img {
+                    object-fit: contain;
+                    width: 100%;
                 }
             }
         }

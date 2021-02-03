@@ -434,7 +434,7 @@ body {
   padding-bottom: 95px;
 }
 .buy__form {
-  margin: 0 auto;
+  margin: 40px auto 0 auto;
 }
 .buy__input {
   margin: 0 auto;
@@ -444,7 +444,7 @@ body {
   padding: 20px;
   color: #231F20;
   border: 1px #A64260 solid;
-  border-radius: 10px;
+  border-radius: 25px;
   font-size: 18px;
 }
 
@@ -574,6 +574,10 @@ body {
     margin: 0 auto;
   }
 
+  .bonus {
+    margin-bottom: 0;
+  }
+
   .program {
     padding: 70px 0;
   }
@@ -627,6 +631,9 @@ body {
     align-items: center;
     flex-direction: column;
   }
+  .course__img {
+    margin-top: 30px;
+  }
 
   .autor__title {
     font-size: 43px;
@@ -640,6 +647,20 @@ body {
   }
   .autor__inner {
     flex-direction: column;
+  }
+  .autor__img {
+    margin-bottom: 30px;
+  }
+
+  .about__inner .item__text--yellow {
+    width: auto;
+  }
+
+  .review .item__textblock {
+    width: auto;
+  }
+  .review .item__textblock::after {
+    display: none;
   }
 }
 @media (max-width: 736px) {
@@ -681,6 +702,10 @@ body {
     font-size: 36px;
     line-height: 40px;
   }
+
+  .footer {
+    padding: 40px 0;
+  }
 }
 @media (max-width: 568px) {
   .subtitle {
@@ -714,10 +739,10 @@ body {
     padding: 70px 0;
   }
   .program__inner {
-    padding: 0 3%;
+    padding: 5% 3%;
   }
   .program__inner--item {
-    width: 80%;
+    width: 65%;
   }
   .program__inner .item__text--header {
     margin-bottom: 25px;
@@ -727,6 +752,10 @@ body {
   .program__inner .item__text--center {
     margin: 0 auto;
     width: 230px;
+  }
+
+  .button__buy {
+    width: 95%;
   }
 
   .about__inner {
@@ -835,10 +864,17 @@ body {
   }
 
   .program__inner--item {
-    width: 90%;
+    width: 75%;
   }
   .program__inner .item__text--header {
     font-size: 18px;
+  }
+  .program__inner .item__text--center {
+    width: auto;
+  }
+  .program__inner .item img {
+    object-fit: contain;
+    width: 100%;
   }
 
   .about {
