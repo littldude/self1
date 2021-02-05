@@ -271,7 +271,7 @@ body {
   background-image: url("../img/bgg.png");
   background-repeat: no-repeat;
   overflow: hidden;
-  background-position: right;
+  background-position: 115%;
   background-size: 1200px;
 }
 .intro::after {
